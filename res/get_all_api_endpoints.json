@@ -1,0 +1,2942 @@
+[
+    {
+        "controller_name": "account",
+        "api_calls": [
+            {
+                "method_name": "add_users",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)emails",
+                    "(required)account_access",
+                    "(required)user_role",
+                    "group",
+                    "cost_report",
+                    "blended_cost",
+                    "unblended_cost",
+                    "list_cost",
+                    "resource_utilization_reports",
+                    "trending_reports",
+                    "change_monitoring",
+                    "best_practices",
+                    "edit_emails",
+                    "all_access",
+                    "savings",
+                    "alert",
+                    "inventory",
+                    "security",
+                    "account_notification",
+                    "partner_tools",
+                    "edit_partner_tools",
+                    "see_api_keys",
+                    "sso_provider",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "add_user_to_group",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)group_ids",
+                    "group_id",
+                    "(required)user_ids",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "copy_user",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)email_to_copy",
+                    "(required)emails",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_account_level_tags",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "account",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_account_level_tags_v2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "account",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_account_level_tags_v3",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "filter_option",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "test_key",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key"
+                ]
+            },
+            {
+                "method_name": "get_improperly_tagged_resources",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date_from",
+                    "date_to",
+                    "aws_account_id",
+                    "rule_name",
+                    "resource_type",
+                    "resource_state",
+                    "subscription_id",
+                    "cloud_provider"
+                ]
+            },
+            {
+                "method_name": "add_api_key",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)account",
+                    "description",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_external_id",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "create_group",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)name"
+                ]
+            },
+            {
+                "method_name": "get_groups",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "email",
+                    "user_id",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "delete_group",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)group_id",
+                    "email",
+                    "user_id",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_groups_v2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "email",
+                    "user_id",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_users_by_group",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)group_id",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_group",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)group_id",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "remove_users_from_group",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)group_ids",
+                    "group_id",
+                    "GroupId",
+                    "(required)user_ids",
+                    "users",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "clone_group",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)group_id",
+                    "(required)name",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "forgot_password",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)email"
+                ]
+            },
+            {
+                "method_name": "get_users",
+                "method_warning": "Deprecated - Please use get_users_v2 as it contains enhanced output and filtering capabilities.",
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_users_v2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "email",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_user",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)user_id",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "edit_user",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)email",
+                    "(required)role",
+                    "auth_types",
+                    "sso_provider",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "remove_user",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)email",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_account_email_settings",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_account",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)account_id",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_accounts",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "account_tag",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_accounts_v2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "account_tag",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_accounts_v3",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "account_tag",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_accounts_v4",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "account_tag",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_accounts_by_group",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)group_id",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_access_control_list",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "section"
+                ]
+            },
+            {
+                "method_name": "get_access_control_list_per_group",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)group_id",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_access_control_list_by_id",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)id",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "add_access_control_lists_per_account_per_group",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)acls",
+                    "(required)group_id",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "delete_access_control_list_from_group",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)group_id",
+                    "(required)acls",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "revoke_account",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)email",
+                    "(required)accounts",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "grant_account",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)email",
+                    "(required)accounts",
+                    "replace_existing_permissions",
+                    "cost_report",
+                    "blended_cost",
+                    "credits",
+                    "resource_utilization_reports",
+                    "trending_reports",
+                    "change_monitoring",
+                    "best_practices",
+                    "unblended_cost",
+                    "list_cost",
+                    "edit_emails",
+                    "automation",
+                    "savings",
+                    "alert",
+                    "inventory",
+                    "security",
+                    "account_notification",
+                    "partner_tools",
+                    "edit_partner_tools",
+                    "see_api_keys",
+                    "all_access",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "add_mav_account",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)account_name",
+                    "account_tags_to_set",
+                    "for_all_accounts",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "add_account",
+                "method_warning": "Deprecated - do not use anymore. This API is maintained for historical reasons only. Please use add_accountV3 instead.",
+                "param_names": [
+                    "(required)access_key",
+                    "(required)account_name",
+                    "user_name",
+                    "aws_access_key",
+                    "aws_secret_key",
+                    "account_tag",
+                    "emails",
+                    "aws_role_arn"
+                ]
+            },
+            {
+                "method_name": "add_account_v2",
+                "method_warning": "Deprecated - do not use anymore. This API is maintained for historical reasons only. Please use add_accountV3 instead.",
+                "param_names": [
+                    "(required)access_key",
+                    "(required)account_name",
+                    "user_name",
+                    "aws_access_key",
+                    "aws_secret_key",
+                    "account_tag",
+                    "emails",
+                    "aws_role_arn"
+                ]
+            },
+            {
+                "method_name": "add_account_v3",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)account_name",
+                    "user_name",
+                    "aws_access_key",
+                    "aws_secret_key",
+                    "account_tag",
+                    "emails",
+                    "payer_use_account",
+                    "payee_aws_account_id",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "add_azure_csp_account",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "azure_ad_id",
+                    "azure_ad_user_name",
+                    "azure_ad_user_password",
+                    "azure_app_id",
+                    "(required)account_name",
+                    "user_name",
+                    "azure_datacenter_group",
+                    "use_cloud_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "add_azure_ea_account",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "azure_enrollment_number",
+                    "azure_api_access_key",
+                    "(required)account_name",
+                    "user_name",
+                    "azure_datacenter_group",
+                    "use_cloud_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "add_azure_inventory_account",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "azure_ad_id",
+                    "azure_app_id",
+                    "azure_api_access_key",
+                    "azure_subscription_id",
+                    "azure_offer_id",
+                    "(required)account_name",
+                    "user_name",
+                    "azure_datacenter_group",
+                    "use_cloud_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "delete_account",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)account_name",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "tag_account",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)account_name",
+                    "(required)account_tag",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "untag_account",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)account_name",
+                    "(required)account_tag",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "add_tag",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)tag_name",
+                    "(required)account_name",
+                    "(required)accounts",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "delete_tag",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)account_name",
+                    "(required)tag_name",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "edit_credential",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "aws_access_key",
+                    "aws_secret_key",
+                    "aws_role_arn",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "edit_azure_csp_credential",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "azure_app_id",
+                    "azure_ad_user_name",
+                    "azure_ad_user_password"
+                ]
+            },
+            {
+                "method_name": "edit_azure_ea_credential",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "azure_enrollment_number",
+                    "azure_api_access_key"
+                ]
+            },
+            {
+                "method_name": "edit_azure_inventory_credential",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "azure_app_id",
+                    "azure_api_access_key"
+                ]
+            },
+            {
+                "method_name": "edit_account_email_settings",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)emails",
+                    "alert_daily_billing",
+                    "alert_health_affected",
+                    "alert_health_all",
+                    "change_monitoring",
+                    "best_practices",
+                    "daily_bill_summary",
+                    "monthly_bill_summary",
+                    "daily_consolidated_bill_summary",
+                    "monthly_consolidated_bill_summary",
+                    "inventory_summary_report",
+                    "ec2_trending_report",
+                    "s3_summary_report",
+                    "ec2_resource_utilization_report",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "edit_aws_billing_configuration",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "accounts_list",
+                    "generate_accounts_of_payees",
+                    "hide_credits_from_payees",
+                    "dbr_bucket_name",
+                    "dbr_region_name",
+                    "cur_enabled",
+                    "cur_start_date",
+                    "cur_bucket_name",
+                    "cur_region_name",
+                    "cur_folder_prefix",
+                    "cur_report_name"
+                ]
+            },
+            {
+                "method_name": "edit_aws_billing_configuration",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "accounts_list",
+                    "generate_accounts_of_payees",
+                    "hide_credits_from_payees",
+                    "dbr_bucket_name",
+                    "dbr_region_name",
+                    "cur_enabled",
+                    "cur_start_date",
+                    "cur_bucket_name",
+                    "cur_region_name",
+                    "cur_folder_prefix",
+                    "cur_report_name"
+                ]
+            },
+            {
+                "method_name": "get_aws_billing_configuration",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key"
+                ]
+            },
+            {
+                "method_name": "get_aws_billing_configuration",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key"
+                ]
+            },
+            {
+                "method_name": "edit_account_email_settings_v2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)emails",
+                    "alert_daily_billing",
+                    "alert_health_affected",
+                    "alert_health_all",
+                    "daily_bill_summary",
+                    "daily_best_practices",
+                    "daily_bpc_importance_level",
+                    "daily_bpc_type",
+                    "change_monitoring",
+                    "change_monitoring_aws_config",
+                    "improperly_tagged_resources",
+                    "automation",
+                    "self_healing",
+                    "daily_consolidated_bill_summary",
+                    "cloudtrail_summary",
+                    "inventory_summary_report",
+                    "ec2_trending_report",
+                    "s3_summary_report",
+                    "ec2_resource_utilization_report",
+                    "weekly_best_practices",
+                    "weekly_bpc_importance_level",
+                    "weekly_bpc_type",
+                    "monthly_bill_summary",
+                    "monthly_consolidated_bill_summary",
+                    "monthly_best_practices",
+                    "monthly_bpc_importance_level",
+                    "monthly_bpc_type",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "edit_accountname",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)account_name",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "add_user",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)email",
+                    "(required)account_access",
+                    "(required)user_role",
+                    "group",
+                    "cost_report",
+                    "blended_cost",
+                    "unblended_cost",
+                    "list_cost",
+                    "resource_utilization_reports",
+                    "trending_reports",
+                    "change_monitoring",
+                    "best_practices",
+                    "edit_emails",
+                    "all_access",
+                    "password",
+                    "automation",
+                    "savings",
+                    "alert",
+                    "inventory",
+                    "security",
+                    "account_notification",
+                    "partner_tools",
+                    "edit_partner_tools",
+                    "see_api_keys",
+                    "auth_types",
+                    "sso_provider",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            }
+        ]
+    },
+    {
+        "controller_name": "alert",
+        "api_calls": [
+            {
+                "method_name": "get_alerts",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "enabled_only",
+                    "get_tagged_account_alerts",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "add_cost_alert",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)alert_name",
+                    "(required)budget",
+                    "(required)percent_of_budget",
+                    "(required)budget_period",
+                    "emails",
+                    "thirdpartyaccountids",
+                    "send_every_days",
+                    "only_send_once",
+                    "budget_custom_start_date",
+                    "budget_custom_end_date",
+                    "saved_filter",
+                    "account_to_filter"
+                ]
+            },
+            {
+                "method_name": "add_cost_alert",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)alert_name",
+                    "(required)budget",
+                    "(required)percent_of_budget",
+                    "(required)budget_period",
+                    "emails",
+                    "thirdpartyaccountids",
+                    "send_every_days",
+                    "only_send_once",
+                    "budget_custom_start_date",
+                    "budget_custom_end_date",
+                    "saved_filter",
+                    "account_to_filter"
+                ]
+            },
+            {
+                "method_name": "delete_cost_alert",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)alert_name"
+                ]
+            },
+            {
+                "method_name": "add_cost_alert_threshold",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)alert_name",
+                    "(required)budget",
+                    "(required)percent_of_budget",
+                    "(required)budget_period",
+                    "emails",
+                    "thirdpartyaccountids",
+                    "send_every_days",
+                    "only_send_once",
+                    "budget_custom_start_date",
+                    "budget_custom_end_date",
+                    "saved_filter",
+                    "account_to_filter"
+                ]
+            },
+            {
+                "method_name": "add_cost_alert_threshold",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)alert_name",
+                    "(required)budget",
+                    "(required)percent_of_budget",
+                    "(required)budget_period",
+                    "emails",
+                    "thirdpartyaccountids",
+                    "send_every_days",
+                    "only_send_once",
+                    "budget_custom_start_date",
+                    "budget_custom_end_date",
+                    "saved_filter",
+                    "account_to_filter"
+                ]
+            },
+            {
+                "method_name": "add_cost_alert_percent",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)alert_name",
+                    "(required)send_frequency_days",
+                    "(required)thresholds",
+                    "(required)monitoring_type",
+                    "selected_tag_key",
+                    "emails"
+                ]
+            },
+            {
+                "method_name": "edit_cost_alert_percent",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)alert_id",
+                    "alert_name",
+                    "(required)send_frequency_days",
+                    "(required)thresholds",
+                    "(required)monitoring_type",
+                    "selected_tag_key",
+                    "emails"
+                ]
+            },
+            {
+                "method_name": "delete_cost_alert_percent",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)alert_id"
+                ]
+            },
+            {
+                "method_name": "get_cost_alerts_percent",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key"
+                ]
+            },
+            {
+                "method_name": "get_cloudtrail_alert_results",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "from",
+                    "to",
+                    "alert_name",
+                    "enabled",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_cloudtrail_alert_results_V2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "from",
+                    "to",
+                    "alert_name",
+                    "enabled",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_cost_alert_results",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "from",
+                    "to",
+                    "alert_name",
+                    "enabled",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_cost_alert_results_V2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "from",
+                    "to",
+                    "alert_name",
+                    "enabled",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_utilization_alert_results",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "from",
+                    "to",
+                    "alert_name",
+                    "enabled",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_utilization_alert_results_V2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "from",
+                    "to",
+                    "alert_name",
+                    "enabled",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_alert_results",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "from",
+                    "to",
+                    "alert_name",
+                    "enabled",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_alert_results_V2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "from",
+                    "to",
+                    "alert_name",
+                    "enabled",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            }
+        ]
+    },
+    {
+        "controller_name": "best_practice",
+        "api_calls": [
+            {
+                "method_name": "get_best_practices",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "all_result",
+                    "include_advisor_bpcs",
+                    "importance",
+                    "category",
+                    "bpc_id",
+                    "include_compliance_checks",
+                    "filter_by_compliance_controls",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_best_practices_v2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "all_result",
+                    "include_advisor_bpcs",
+                    "importance",
+                    "category",
+                    "bpc_id",
+                    "include_compliance_checks",
+                    "filter_by_compliance_controls",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_best_practices_v3",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "cloud_account_ids",
+                    "all_result",
+                    "include_advisor_bpcs",
+                    "importance",
+                    "category",
+                    "bpc_id",
+                    "include_compliance_checks",
+                    "filter_by_compliance_controls",
+                    "use_cloud_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "save_best_practice_notification",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "emails",
+                    "host",
+                    "port",
+                    "(required)bpc_ids",
+                    "use_cloud_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "save_best_practice_notification_v2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)thirdpartyaccountids",
+                    "(required)bpc_ids",
+                    "use_cloud_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "ignore_best_practice",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)bpc_id",
+                    "ignored_reason",
+                    "unignore",
+                    "expire_date",
+                    "use_cloud_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            }
+        ]
+    },
+    {
+        "controller_name": "billing",
+        "api_calls": [
+            {
+                "method_name": "edit_custom_billing_charge_fixed",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)Id",
+                    "StartDate",
+                    "EndDate",
+                    "Description",
+                    "Accounts",
+                    "AccountsInvert",
+                    "AccountFamilies",
+                    "AccountFamiliesInvert",
+                    "Amount",
+                    "OneTime",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "edit_payee_support_charges",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "suppress_aws_support",
+                    "recalculate_support",
+                    "apply_by_account",
+                    "ignore_100_minimum",
+                    "displayed_by_account",
+                    "account_family",
+                    "aws_account_id"
+                ]
+            },
+            {
+                "method_name": "schedule_invoice",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)day_of_month",
+                    "due_date",
+                    "convert_to_value",
+                    "convert_to_currency",
+                    "(required)report_format",
+                    "(required)group_by",
+                    "(required)cost_type",
+                    "(required)export_type",
+                    "cc_email",
+                    "saved_filter_name",
+                    "subject",
+                    "description",
+                    "invoice_header",
+                    "bucket",
+                    "email_unfinalized_bill",
+                    "suppress_due_date",
+                    "eu_compliant",
+                    "(required)billing_family_name",
+                    "tag_name",
+                    "tag_value"
+                ]
+            },
+            {
+                "method_name": "get_invoice",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)customer_names",
+                    "(required)start_date",
+                    "(required)end_date",
+                    "(required)format",
+                    "(required)cost_type",
+                    "group_by",
+                    "saved_filter_name",
+                    "regions",
+                    "currency_denomination",
+                    "currency_conversion",
+                    "show_credits",
+                    "tag_key",
+                    "tag_value",
+                    "product_names",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_invoice_v2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "replace_custom_charge_descriptions",
+                    "(required)customer_names",
+                    "(required)start_date",
+                    "(required)end_date",
+                    "(required)format",
+                    "(required)cost_type",
+                    "group_by",
+                    "saved_filter_name",
+                    "regions",
+                    "currency_denomination",
+                    "currency_conversion",
+                    "show_credits",
+                    "tag_key",
+                    "tag_value",
+                    "product_names",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_invoice_customers",
+                "method_warning": "Deprecated - do not use anymore. This API is maintained for historical reasons only. Please use get_account_family_v2 instead.",
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "create_customer",
+                "method_warning": "Deprecated - do not use anymore. This API is maintained for historical reasons only. Please use create_account_family instead.",
+                "param_names": [
+                    "(required)access_key",
+                    "(required)name",
+                    "(required)email",
+                    "(required)address",
+                    "(required)aws_accounts"
+                ]
+            },
+            {
+                "method_name": "get_detailed_billing_analysis",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)saved_filter_name",
+                    "start",
+                    "end"
+                ]
+            },
+            {
+                "method_name": "create_detailed_billing_grouped_filter_v2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)filter_name",
+                    "filters",
+                    "(required)group_by",
+                    "aggregate",
+                    "cost_type",
+                    "email_on_build",
+                    "emails",
+                    "include_untagged",
+                    "tags",
+                    "filter_tag_type",
+                    "chart_type",
+                    "resource_id",
+                    "include_usage_quantity",
+                    "include_zero_costs",
+                    "exclude_credits",
+                    "account_type"
+                ]
+            },
+            {
+                "method_name": "create_detailed_billing_grouped_filter",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)report_name",
+                    "email_on_build",
+                    "emails",
+                    "(required)group_by",
+                    "include_untagged",
+                    "aggregate",
+                    "cost_type",
+                    "chart_type",
+                    "resource_id",
+                    "include_usage_quantity",
+                    "include_zero_costs",
+                    "exclude_credits",
+                    "tags",
+                    "filter_tag_type",
+                    "account_type",
+                    "accounts",
+                    "invert_accounts",
+                    "account_families",
+                    "invert_account_families",
+                    "regions",
+                    "invert_regions",
+                    "services",
+                    "invert_services",
+                    "operations",
+                    "invert_operations",
+                    "usage_types",
+                    "invert_usage_types"
+                ]
+            },
+            {
+                "method_name": "delete_detailed_billing_grouped_filter",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)report_name"
+                ]
+            },
+            {
+                "method_name": "schedule_report_email_advanced_grouping",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)filter_name",
+                    "include_csv",
+                    "email_daily_list",
+                    "email_weekly_list",
+                    "email_monthly_list",
+                    "email_daily",
+                    "email_weekly",
+                    "email_monthly",
+                    "use_same_email",
+                    "description"
+                ]
+            },
+            {
+                "method_name": "get_detailed_billing_with_grouping",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)saved_filter_name",
+                    "start",
+                    "end"
+                ]
+            },
+            {
+                "method_name": "get_detailed_billing_with_grouping_v2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)saved_filter_name",
+                    "start",
+                    "end",
+                    "with_costs_by_group",
+                    "with_costs_by_time"
+                ]
+            },
+            {
+                "method_name": "get_detailed_billing_with_grouping_by_currency",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)saved_filter_name",
+                    "start",
+                    "end",
+                    "with_costs_by_group",
+                    "with_costs_by_time"
+                ]
+            },
+            {
+                "method_name": "get_ri_upfront_cost_amortization",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)start",
+                    "(required)end",
+                    "(required)service"
+                ]
+            },
+            {
+                "method_name": "get_detailed_billing_file",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)start",
+                    "(required)end",
+                    "(required)cost_type"
+                ]
+            },
+            {
+                "method_name": "get_dashboard",
+                "method_warning": "Deprecated - do not use anymore. This API is maintained for historical reasons only. Please use get_billing_dashboard_v2 instead.",
+                "param_names": [
+                    "(required)access_key",
+                    "use_account"
+                ]
+            },
+            {
+                "method_name": "get_billing_dashboard_v2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "cost_type",
+                    "date",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_monthly_bill",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "use_account",
+                    "aws_account_id",
+                    "include_services",
+                    "for_date",
+                    "amortize_cost",
+                    "cost_type"
+                ]
+            },
+            {
+                "method_name": "get_cost_saving",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date",
+                    "groupby"
+                ]
+            },
+            {
+                "method_name": "add_undiscovered_aws_account_id",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)add_aws_account_id",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "create_account_family",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)name",
+                    "(required)accounts",
+                    "email",
+                    "invoice_id",
+                    "address",
+                    "project_code",
+                    "payment_term",
+                    "additional_info",
+                    "recalculate_support_charges",
+                    "support_charge_apply_by_account",
+                    "suppress_support_charges",
+                    "do_not_enforce_minimum_charge",
+                    "support_charge_broken_out",
+                    "create_mav_for_family",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "modify_account_family",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)name",
+                    "accounts",
+                    "add_accounts",
+                    "remove_accounts",
+                    "new_name",
+                    "email",
+                    "invoice_id",
+                    "address",
+                    "project_code",
+                    "payment_term",
+                    "additional_info",
+                    "recalculate_support_charges",
+                    "support_charge_apply_by_account",
+                    "suppress_support_charges",
+                    "do_not_enforce_minimum_charge",
+                    "support_charge_broken_out",
+                    "create_mav_for_family",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_account_family_copy_dbr",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)account_family_name",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "modify_account_family_copy_dbr",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)account_family_name",
+                    "(required)bucket_name",
+                    "(required)cost_type",
+                    "(required)include_all_tags",
+                    "aws_use_account_upload",
+                    "role_arn",
+                    "use_deprecated_feature",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "delete_account_family_copy_dbr",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)account_family_name",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "delete_account_family",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)name",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_account_family",
+                "method_warning": "Deprecated - do not use anymore. This API is maintained for historical reasons only. Please use get_account_family_v2 instead.",
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "name",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_account_family_v2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "name",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_ec2_instances_updated_hourly",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "aws_accountId",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "configure_custom_cost",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)CostType",
+                    "(required)CustomCostRIAmortization",
+                    "RetiredRIAmortization",
+                    "(required)RIUnsharing",
+                    "SelectedFamilies",
+                    "(required)EnforceEc2RIVolume",
+                    "(required)UncompressPricingTiers",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_custom_billing_charges",
+                "method_warning": "Deprecated - do not use anymore. This API is maintained for historical reasons only. Please use get_custom_billing_charges_V2 instead.",
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "accounts",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_custom_billing_charges_V2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "accounts",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_custom_billing_charges_V3",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "accounts",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "add_custom_billing_charge_monthly_percent",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)Description",
+                    "(required)PercentageValue",
+                    "MinimumCharge",
+                    "MaximumCharge",
+                    "Tiers",
+                    "ApplyPercentageTo",
+                    "Stack",
+                    "StackOrder",
+                    "Accounts",
+                    "AccountsInvert",
+                    "AccountFamilies",
+                    "AccountFamiliesInvert",
+                    "Regions",
+                    "RegionsInvert",
+                    "AWSService",
+                    "AWSServiceInvert",
+                    "Operation",
+                    "OperationInvert",
+                    "UsageType",
+                    "UsageTypeInvert",
+                    "Tag",
+                    "TagInvert",
+                    "(required)StartDate",
+                    "EndDate",
+                    "DisplayServiceBy",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "edit_custom_billing_charge_monthly_percent",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)Id",
+                    "Description",
+                    "ListCost",
+                    "PercentageValue",
+                    "MinimumCharge",
+                    "MaximumCharge",
+                    "Tiers",
+                    "ApplyPercentageTo",
+                    "Stack",
+                    "StackOrder",
+                    "Accounts",
+                    "AccountsInvert",
+                    "AccountFamilies",
+                    "AccountFamiliesInvert",
+                    "Regions",
+                    "RegionsInvert",
+                    "AWSService",
+                    "AWSServiceInvert",
+                    "Operation",
+                    "OperationInvert",
+                    "UsageType",
+                    "UsageTypeInvert",
+                    "Tag",
+                    "TagInvert",
+                    "StartDate",
+                    "EndDate",
+                    "DisplayServiceBy",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "azure_add_custom_billing_charge_fixed",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)name",
+                    "(required)description",
+                    "(required)charge_value",
+                    "(required)start_date",
+                    "end_date",
+                    "cost_baseline",
+                    "is_recurring",
+                    "subscriptions",
+                    "categories",
+                    "sub_categories",
+                    "locations",
+                    "consumed_services",
+                    "meter_names",
+                    "regions",
+                    "tags",
+                    "tiers",
+                    "minimum_charge",
+                    "maximum_charge",
+                    "azure_custom_charge_type",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "azure_add_custom_billing_charge_monthly_percentage",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)name",
+                    "(required)description",
+                    "(required)charge_value",
+                    "(required)start_date",
+                    "end_date",
+                    "cost_baseline",
+                    "is_recurring",
+                    "subscriptions",
+                    "categories",
+                    "sub_categories",
+                    "locations",
+                    "consumed_services",
+                    "meter_names",
+                    "regions",
+                    "tags",
+                    "tiers",
+                    "minimum_charge",
+                    "maximum_charge",
+                    "azure_custom_charge_type",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "add_custom_billing_charge_percent_all_charges",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)Description",
+                    "(required)PercentageValue",
+                    "(required)ApplyPercentageTo",
+                    "Accounts",
+                    "AccountsInvert",
+                    "AccountFamilies",
+                    "AccountFamiliesInvert",
+                    "Regions",
+                    "RegionsInvert",
+                    "AWSService",
+                    "AWSServiceInvert",
+                    "Operation",
+                    "OperationInvert",
+                    "UsageType",
+                    "UsageTypeInvert",
+                    "Tag",
+                    "TagInvert",
+                    "(required)StartDate",
+                    "(required)EndDate",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "edit_custom_billing_charge_percent_all_charges",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "(required)Id",
+                    "Description",
+                    "PercentageValue",
+                    "ApplyPercentageTo",
+                    "Accounts",
+                    "AccountsInvert",
+                    "AccountFamilies",
+                    "AccountFamiliesInvert",
+                    "Regions",
+                    "RegionsInvert",
+                    "AWSService",
+                    "AWSServiceInvert",
+                    "Operation",
+                    "OperationInvert",
+                    "UsageType",
+                    "UsageTypeInvert",
+                    "Tag",
+                    "TagInvert",
+                    "StartDate",
+                    "EndDate"
+                ]
+            },
+            {
+                "method_name": "delete_custom_billing_charge_percent_all_charges",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "Id"
+                ]
+            },
+            {
+                "method_name": "delete_custom_billing_charge_monthly_percent",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "Id"
+                ]
+            },
+            {
+                "method_name": "delete_custom_billing_charge_fixed",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "Id"
+                ]
+            },
+            {
+                "method_name": "delete_custom_billing_charge",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "Id"
+                ]
+            },
+            {
+                "method_name": "custom_billing_charge",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "Id"
+                ]
+            },
+            {
+                "method_name": "add_custom_billing_charge_fixed",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)StartDate",
+                    "EndDate",
+                    "(required)Description",
+                    "Accounts",
+                    "AccountsInvert",
+                    "AccountFamilies",
+                    "AccountFamiliesInvert",
+                    "(required)Amount",
+                    "(required)OneTime",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            }
+        ]
+    },
+    {
+        "controller_name": "change_monitoring",
+        "api_calls": [
+            {
+                "method_name": "get_changes",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "start",
+                    "end",
+                    "resource_id"
+                ]
+            }
+        ]
+    },
+    {
+        "controller_name": "cloudwatch",
+        "api_calls": [
+            {
+                "method_name": "get_history",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "start",
+                    "end",
+                    "resource_id",
+                    "(required)service"
+                ]
+            }
+        ]
+    },
+    {
+        "controller_name": "help",
+        "api_calls": [
+            {
+                "method_name": "get_all_api_endpoints",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key"
+                ]
+            }
+        ]
+    },
+    {
+        "controller_name": "inventory",
+        "api_calls": [
+            {
+                "method_name": "get_resources_iam_Policies",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_workspaces_directories",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "custom_security_group",
+                    "directory_id",
+                    "directory_name",
+                    "iam_role_id",
+                    "region",
+                    "registration_code",
+                    "state",
+                    "type",
+                    "internet_access_enabled",
+                    "workdocs_enabled",
+                    "workspace_id",
+                    "user_name",
+                    "bundle_id",
+                    "error_code",
+                    "ip_address",
+                    "security_group_id",
+                    "subnet_id",
+                    "vpc_id",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_workspaces_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "custom_security_group",
+                    "directory_id",
+                    "directory_name",
+                    "iam_role_id",
+                    "region",
+                    "registration_code",
+                    "state",
+                    "type",
+                    "internet_access_enabled",
+                    "workdocs_enabled",
+                    "workspace_id",
+                    "user_name",
+                    "bundle_id",
+                    "error_code",
+                    "ip_address",
+                    "security_group_id",
+                    "subnet_id",
+                    "vpc_id",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_network_acl_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_redshift_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_route53_hostedzone_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_route53_healthcheck_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_virtual_machine_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_cloudtrail_trails",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_tagged_resources",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "tag_key",
+                    "resource_type",
+                    "filter_out_name_key",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_vpc_security_group_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_vpc_security_group_details_V2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_load_balancer_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_vpc_vpn_connections_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_s3_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_rds_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_rds_backup_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_rds_security_group_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_rds_parameter_group_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_rds_snapshot_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_cloudformation_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_cloudsearch_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_dynamodb_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_elasticache_clusters_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_elasticache_nodes_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_elasticbeanstalk_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_elasticmapreduce_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_glacier_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_swf_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_vpc_vpn_gateways",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_customer_gateways",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_aws_internet_gateways",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_route_tables",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_vpc_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_vpc_subnets",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_vpc_endpoints",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_iam_users",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_iam_groups",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_iam_roles",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_password_policy",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "find_resources",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "(required)resource_type",
+                    "(required)resource_id",
+                    "date",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_address_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_ebs_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_ami_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_security_group_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_load_balancer_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_hosts",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_s3_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_rds_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_rds_backup_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_rds_security_group_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_rds_parameter_group_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_rds_snapshot_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_cloudformation_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_cloudsearch_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_dynamodb_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_elasticache_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_elasticbeanstalk_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_elasticmapreduce_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_glacier_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_swf_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_vpc_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_workspaces_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_redshift_summary",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "instance_ids",
+                    "resource_tags",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_details_V2",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "instance_ids",
+                    "resource_tags",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_details_V3",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "instance_ids",
+                    "resource_tags",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_details_V4",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "instance_ids",
+                    "resource_tags",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_address_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "instance_ids",
+                    "resource_tags",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_ebs_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "volume_ids",
+                    "resource_tags",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_ebs_snapshots",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_ami_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_network_interfaces",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            },
+            {
+                "method_name": "get_resources_ec2_security_group_details",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "date",
+                    "aws_account_ids",
+                    "max_results",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            }
+        ]
+    },
+    {
+        "controller_name": "security",
+        "api_calls": [
+            {
+                "method_name": "get_publicly_accessible_resources",
+                "method_warning": null,
+                "param_names": [
+                    "(required)access_key",
+                    "date"
+                ]
+            },
+            {
+                "method_name": "get_cloudtrail_custom_metrics",
+                "method_warning": null,
+                "param_names": [
+                    "(required)(admin level)access_key",
+                    "from",
+                    "to",
+                    "type",
+                    "use_aws_account_id",
+                    "use_account",
+                    "use_cc_account_id"
+                ]
+            }
+        ]
+    }
+]
