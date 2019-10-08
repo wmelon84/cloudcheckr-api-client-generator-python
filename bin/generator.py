@@ -14,8 +14,10 @@ import json
 import requests
 
 
-def from_str_to_obj(response=''):
-    return json.loads(response, object_hook=lambda resp: collections.namedtuple('response', [inflection.underscore(key) for key in resp.keys()])(*resp.values()))
+def from_str_to_obj(response=''): 
+    return json.loads(response, object_hook=lambda r: collections.namedtuple(
+        'r', 
+        [inflection.underscore(key) for key in r.keys()])(*r.values())) 
 
 
 '''
@@ -62,19 +64,27 @@ for c in controllers:
         source_code = ''
         print('Controller: ' + c.controller_name)
         for call in c.api_calls:
-            if call.method_name == 'test_key':
+            if call.method_name == 'test_key' or call.method_name == 'add_user_to_group':
                 source_code = IMPORTS
-
                 source_code += 'def ' + call.method_name + '('
+                required_list = list(
+                    map(lambda p: p.replace('(required)', '').replace('(admin level)', ''),
+                        filter(lambda p: '(required)' in p, call.param_names)))
+                optional_list = list(
+                    map(lambda p: p.replace('(admin level)', '') + '=None',
+                        filter(lambda p: '(required)' not in p, call.param_names)))
                 for param in call.param_names:
                     if '(required)' in param:
-                        source_code += param.replace('(required)', '').replace('(admin level)', '')
+                        required_list.append(param.replace('(required)', '').replace('(admin level)', ''))
+                        # source_code += param.replace('(required)', '').replace('(admin level)', '')
                     else:
-                        source_code += param.replace('(admin level)', '') + '=None'
+                        optional_list.append(param.replace('(admin level)', '') + '=None')
+                        # source_code += param.replace('(admin level)', '') + '=None'
                     source_code += ', '
                     source_code += "env='https://api.cloudcheckr.com/api/'"
                     source_code += '):\n'
-                    source_code += '    response = requests.get(env + \'' + c.controller_name + '.json/' + call.method_name + '\', headers={\'access_key\': access_key})\n'
+                    source_code += '    response = requests.get(env + \'' + c.controller_name + '.json/' \
+                                   + call.method_name + '\', headers={\'access_key\': access_key})\n'
                     source_code += '    response.raise_for_status()\n'
                     source_code += '    return from_str_to_obj(response.text)\n'
 

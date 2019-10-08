@@ -3,7 +3,7 @@
 
 import setuptools
 
-long_description = open('README.md', 'rb').read().decode('utf-8')
+long_description = open('README.rst', 'rb').read().decode('utf-8')
 
 install_requires = ["requests<=2.22.0"]
 
