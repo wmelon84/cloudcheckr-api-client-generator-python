@@ -8,7 +8,7 @@ import os
 import requests
 import sys
 
-BASE_PATH = '../_build/cloudcheckr_api_client/controllers/'
+BASE_PATH = '../build/cloudcheckr_api_client/controllers/'
 IMPORTS = '''import requests
 from ._utils import get_non_blank_parameters, from_str_to_obj\n\n'''
 UTILS_FILE = '_utils.py'
